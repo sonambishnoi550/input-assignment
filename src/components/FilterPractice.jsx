@@ -55,7 +55,7 @@ const FilterPractice = () => {
                         ))
                     ) : (
                             <tr>
-                                <td colSpan="3" className='text-center text-red-600'>no found</td>
+                                <td colSpan="3" className='text-center text-red-600'>no match found</td>
                             </tr>
                 )}
                 </tbody>
