@@ -30,7 +30,7 @@ const HomePage = () => {
         <div className="min-h-screen">
             <div className="container">
                 <Header />
-                <div className="flex items-center space-x-4 py-2 max-2xl:overflow-x-auto">
+                <div className="flex items-center space-x-4 py-[17px] max-2xl:overflow-x-auto">
                     {tabs.map((tabName) => (
                         <button
                             key={tabName}
@@ -59,7 +59,7 @@ const HomePage = () => {
                 <div className="flex flex-col items-center py-[43px] md:px-4">
                     <div className="flex flex-col md:flex-row lg:pl-12 lg:pr-[43px] bg-black text-white p-6 pt-[38px] rounded-lg max-w-[1141px] w-full">
                         <div className="md:w-2/3 w-full">
-                            <h1 className="lg:text-[42px] md:text-3xl text-2xl font-bold md:mb-24 mb-8 max-sm:text-center uppercase font-montserrat">hit me hard and soft {heading}</h1>
+                            <h1 className="lg:text-[42px] md:text-custom2xl text-2xl font-bold md:mb-24 mb-8 max-sm:text-center uppercase font-montserrat">hit me hard and soft {heading}</h1>
                             <div className="md:flex items-center gap-7 md:relative">
                                 <img className="md:absolute lg:top-[8%] max-lg:pt-32 max-sm:pt-0  max-sm:flex max-sm:mx-auto max-w-[206px]" src="./assets/images/webp/profile.webp" alt="girl-dp" />
                                 <div className="flex-col md:absolute xl:left-[33%] md:left-[49%] top-[5%] lg:mt-12 md:mt-8">

@@ -20,6 +20,9 @@ module.exports = {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"]
       },
+      fontSize: {
+        custom2xl:"28px"
+      },
       colors: {
         gray: "#DBDBF3",
         lightGray: "#31374D1A",
