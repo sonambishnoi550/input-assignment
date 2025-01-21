@@ -64,7 +64,7 @@ const HomePage = () => {
                                 <img className="md:absolute lg:top-[8%] max-lg:pt-32 max-sm:pt-0  max-sm:flex max-sm:mx-auto max-w-[206px]" src="./assets/images/webp/profile.webp" alt="girl-dp" />
                                 <div className="flex-col md:absolute xl:left-[33%] md:left-[49%] top-[5%] lg:mt-12 md:mt-8">
                                     <p className="lg:text-[32px] text-2xl mt-4 text-center">Billie Eilish{girlName}</p>
-                                    <p className="lg:text-base text-sm text-white/70 text-center">Released May 17, 2024</p>
+                                    <p className="lg:text-base text-sm text-white/70 text-center pt-[5px]">Released May 17, 2024</p>
                                 </div>
                             </div>
                         </div>
