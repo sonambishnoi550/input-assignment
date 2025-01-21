@@ -1,11 +1,20 @@
 import React from 'react'
-import FilterPractice from './components/FilterPractice'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Hero from './components/Home/Hero'
+import FilterPractice from './components/Home/FilterPractice';
+
 
 const App = () => {
   return (
-    <>
-      <FilterPractice />
-    </>
+    <div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/:tab" element={<Hero />} />
+          <Route path="/about" element={<FilterPractice />} />
+        </Routes>
+      </Router>
+    </div>
   )
 }
 

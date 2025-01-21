@@ -7,15 +7,26 @@ module.exports = {
     extend: {
       container: {
         center: true,
-        padding: "16px",
+        padding: "20px",
         screens: {
           sm: "640px",
           md: "768px",
           lg: "1024px",
-          xl: "1140px",   
+          xl: "1140px",
+          "2xl": "1328px"
         },
       },
+     
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"]
+      },
+      colors: {
+        gray: "#DBDBF3",
+        lightGray: "#31374D1A",
+        customBlack: "#14191C",
+         lightBlack: "#333333"
+      }
     },
   },
   plugins: [],
-};
+}
