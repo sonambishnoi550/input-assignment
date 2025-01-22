@@ -32,7 +32,8 @@ module.exports = {
         gray: "#DBDBF3",
         lightGray: "#31374D1A",
         customBlack: "#14191C",
-        lightBlack: "#333333"
+        lightBlack: "#333333",
+        'off-white': "#FAFAFF",
       }
     },
   },
