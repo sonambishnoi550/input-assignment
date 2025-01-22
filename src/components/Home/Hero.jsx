@@ -99,7 +99,7 @@ const Hero = () => {
                             <p
                                 onClick={() => handleChange(item)}
                                 key={index}
-                                className={`flex items-center cursor-pointer hover:bg-customBlack size-[30px] justify-center rounded-full transition-all duration-300 hover:text-white hover:font-medium text-black text-xs leading-custom-xl ${selectedLetter === item.toUpperCase() ? "bg-customBlack text-white" : ""}`} // Apply active styles
+                                className={`flex items-center cursor-pointer hover:bg-customBlack size-[30px] justify-center rounded-full transition-all duration-300 hover:text-white hover:font-medium text-black text-xs leading-custom-2xl ${selectedLetter === item.toUpperCase() ? "bg-customBlack text-white" : ""}`} // Apply active styles
                             >
                                 {item}
                             </p>
@@ -107,7 +107,7 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="bg-customBlack max-w-[1141px] mx-auto mt-[43px] rounded-[22px] flex pl-12 pr-[43px] justify-between pt-[38px] relative pb-[43px] max-sm:flex-wrap max-sm:pt-4 max-sm:px-5 max-sm:pb-20">
-                    <h1 className="font-Montserrat leading-custom-3xl text-5xl uppercase text-white font-bold max-lg:text-4xl max-sm:text-center max-sm:text-3xl max-sm:mx-auto">
+                    <h1 className="font-Montserrat leading-custom-2xl text-5xl uppercase text-white font-bold max-lg:text-4xl max-sm:text-center max-sm:text-3xl max-sm:mx-auto">
                         hit me hard and {selectedCategory === "music" ? "music" : selectedCategory === "pop" ? "pop" : selectedCategory === "rock" ? "rock" : "all"}
                     </h1>
                     <img
