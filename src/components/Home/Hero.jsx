@@ -44,13 +44,13 @@ const Hero = () => {
 
     return (
         <div className="pt-[11px] pb-12 bg-off-white lg:h-screen">
-            <Header />
-            <div className="container">
-                <div className="flex justify-center items-center gap-[15px] pt-[17px] max-xl:overflow-x-auto pb-2">
+            <div className="container mx-auto">
+                <Header />
+                <div className="flex xl:justify-center items-center gap-[15px] pt-[17px] max-xl:overflow-x-auto pb-2">
                     <div className="flex items-center gap-[5px]">
                         <CustomButton
                             customOnClick={() => handleTextChange("all")}
-                            myClass={`${selectedCategory === "all" ? "bg-customBlack text-white" : ""} !text-xs text-customBlack !px-[13.48px] !py-[5.84px] max-xl:!-ml-4 hover:!bg-customBlack hover:text-white`}
+                            myClass={`${selectedCategory === "all" ? "bg-customBlack text-white" : ""} !text-xs text-customBlack !px-[13.48px] xl:!-ml-4 !py-[5.84px] hover:!bg-customBlack hover:text-white`}
                             text="All"
                         />
                         <CustomButton
@@ -66,7 +66,7 @@ const Hero = () => {
                         <div className="relative">
                             <CustomButton
                                 customOnClick={toggleDropdown}
-                                myClass={`${selectedCategory === "music" ? "bg-customBlack text-white" : ""} !text-xs text-customBlack !py-[5.84px] !px-[9.2px] hover:!bg-customBlack hover:text-white group flex items-center gap-[5px]`}
+                                myClass={`${selectedCategory === "music" ? "bg-customBlack text-white" : ""} !text-xs text-customBlack !py-[5.84px] !px-[11px] hover:!bg-customBlack hover:text-white group flex items-center gap-[5px]`}
                                 text="More"
                                 icon={<DownArrow classStyle={`${selectedCategory === "music" ? "stroke-white" : ""} group-hover:stroke-white transition-all duration-300`} />}
                             />
@@ -94,30 +94,30 @@ const Hero = () => {
                             )}
                         </div>
                     </div>
-                    <div className="flex items-center gap-[2px]">
+                    <div className="flex items-center ">
                         {ALPHABET_LIST.map((item, index) => (
                             <p
                                 onClick={() => handleChange(item)}
                                 key={index}
-                                className={`flex items-center cursor-pointer hover:bg-customBlack size-[30px] justify-center rounded-full transition-all duration-300 hover:text-white hover:font-medium text-black text-xs leading-custom-2xl ${selectedLetter === item.toUpperCase() ? "bg-customBlack text-white" : ""}`} // Apply active styles
+                                className={`flex items-center cursor-pointer hover:bg-customBlack size-[30px] justify-center rounded-full transition-all duration-300 hover:text-white hover:font-medium text-black text-xs leading-custom-xl ${selectedLetter === item.toUpperCase() ? "bg-customBlack text-white" : ""}`} // Apply active styles
                             >
                                 {item}
                             </p>
                         ))}
                     </div>
                 </div>
-                <div className="bg-customBlack max-w-[1141px] mx-auto mt-[43px] rounded-[22px] flex pl-12 pr-[43px] justify-between pt-[38px] relative pb-[43px] max-sm:flex-wrap max-sm:pt-4 max-sm:px-5 max-sm:pb-20">
+                <div className="bg-customBlack max-w-[1140px] mx-auto rounded-[22px] flex pl-12 pr-[43px] justify-between pt-[38px] mt-[35px] relative pb-[43px] max-sm:flex-wrap max-sm:pt-4 max-sm:px-5 max-sm:pb-20">
                     <h1 className="font-Montserrat leading-custom-2xl text-5xl uppercase text-white font-bold max-lg:text-4xl max-sm:text-center max-sm:text-3xl max-sm:mx-auto">
                         hit me hard and {selectedCategory === "music" ? "music" : selectedCategory === "pop" ? "pop" : selectedCategory === "rock" ? "rock" : "all"}
                     </h1>
                     <img
-                        src="/assets/images/webp/hero.webp"
+                        src="./assets/images/webp/hero.webp"
                         alt="hero"
                         className="size-[261px] max-lg:size-48 max-sm:mx-auto max-sm:mt-4 pointer-events-none"
                     />
                     <div className="absolute flex items-center gap-[26px] -bottom-16 max-lg:-bottom-10 max-sm:-bottom-6">
                         <img
-                            src="/assets/images/webp/profile.webp"
+                            src="./assets/images/webp/profile.webp"
                             alt="profile"
                             className="size-[206px] max-lg:size-32 max-sm:size-20 pointer-events-none"
                         />
