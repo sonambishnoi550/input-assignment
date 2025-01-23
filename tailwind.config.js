@@ -16,14 +16,8 @@ module.exports = {
           "2xl": "1328px"
         },
       },
-
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"]
-      },
-      fontSize: {
-        custom2xl: "28px",
-        "custom-3xl": "32px",
-        "custom-sm": "12px"
       },
       lineHeight: {
        " custom-2xl":"121%"
