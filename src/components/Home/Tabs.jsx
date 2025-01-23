@@ -12,7 +12,7 @@ const AlphabetsTab = () => {
         setSearchParams({ ...searchParams, letter: letter.toLowerCase() });
     };
     return (
-        <div className="border-y lg:pt-[42px] border-gray lg:pb-[37px] md:py-8 py-6 bg-off-white">
+        <div className="border-y lg:pt-10 border-gray lg:pb-9 md:py-8 py-6 bg-off-white">
             <div className="container">
                 <div className="flex items-center lg:justify-center lg:gap-1 gap-6 max-xl:overflow-x-auto">
                     {ALPHABET_LIST.map((item, index) => (

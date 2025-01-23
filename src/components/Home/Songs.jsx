@@ -24,10 +24,10 @@ const Songs = () => {
   };
 
   return (
-    <div className='lg:pt-14 pt-5'>
+    <div className='bg-off-white'>
       <div className='container'>
-        <h2 className='font-semibold lg:text-5xl md:text-4xl text-3xl text-black pb-[30px]'>Songs</h2>
-        <div className="flex justify-between items-center pb-[45px] overflow-x-auto gap-[60px]">
+        <h2 className='font-semibold lg:text-5xl md:text-4xl text-3xl text-black'>Songs</h2>
+        <div className="flex justify-between items-center pb-[35px] overflow-x-auto gap-[60px]">
           <div className='lg:w-8/12 md:w-7/12 w-full '>
             <div className=' whitespace-nowrap'>
               <table className='w-full'>
@@ -52,7 +52,7 @@ const Songs = () => {
               </table>
             </div>
           </div>
-          <div className='relative lg:w-[300px] lg:h-[600px] md:w-[250px] md:h-[460px] w-full h-[400px]'>
+          <div className='relative lg:w-[300px] lg:h-[580px] md:w-[250px] md:h-[460px] w-full h-[400px]'>
             {imageUrl ? (
               <>
                 <img src={imageUrl} alt="Selected" className='w-full h-full object-cover rounded-[20px]' />

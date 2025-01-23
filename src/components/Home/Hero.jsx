@@ -43,7 +43,7 @@ const Hero = () => {
     };
 
     return (
-        <div className="pt-[11px] lg:pb-[130px] md:pb-[100px] pb-20 bg-off-white">
+        <div className="pt-[10px] md:pb-[104px] pb-20 bg-off-white">
             <div className="container mx-auto">
                 <Header />
                 <div className="flex xl:justify-center items-center gap-[15px] pt-[17px] max-xl:overflow-x-auto pb-2">
