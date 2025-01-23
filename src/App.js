@@ -1,17 +1,15 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Hero from './components/Home/Hero'
-import FilterPractice from './components/Home/FilterPractice';
-
+import Home from './components/view/Home';
+import Hero from './components/home/Hero';
 
 const App = () => {
   return (
     <div>
       <Router>
         <Routes>
-          <Route path="/" element={<Hero />} />
+          <Route path="/" element={<Home />} />
           <Route path="/:tab" element={<Hero />} />
-          <Route path="/about" element={<FilterPractice />} />
         </Routes>
       </Router>
     </div>

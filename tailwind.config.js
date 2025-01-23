@@ -13,14 +13,14 @@ module.exports = {
           md: "768px",
           lg: "1024px",
           xl: "1140px",
-          "2xl": "1328px"
         },
       },
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"]
       },
       lineHeight: {
-       " custom-2xl":"121%"
+        "custom-2xl": "121%",
+         "custom-3xl": "171%"
       },
       colors: {
         gray: "#DBDBF3",
@@ -28,6 +28,8 @@ module.exports = {
         customBlack: "#14191C",
         lightBlack: "#333333",
         'off-white': "#FAFAFF",
+        'off-black': "  #9F9DAB",
+        blue:"#007BFF"
       }
     },
   },

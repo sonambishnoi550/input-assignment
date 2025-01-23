@@ -26,4 +26,13 @@ export const ALPHABET_LIST = [
     "Y",
     "Z",
     "#",
-]
+];
+export const SONGS_LIST = [
+    { title: 'Nightmares', timesPlayed: '670,319,463' },
+    { title: 'Under the Influence', timesPlayed: '170,528,328' },
+    { title: 'Good Luck, Babe!', timesPlayed: '220,143,578' },
+    { title: 'I Had Some Help', timesPlayed: '170,528,328' },
+    { title: 'Die With A Smile', timesPlayed: '526,448,261' },
+    { title: 'Under the Influence', timesPlayed: '670,319,463' },
+    { title: 'Good Luck, Babe!', timesPlayed: '526,448,261' },
+];
