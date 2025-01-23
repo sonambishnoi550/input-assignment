@@ -13,11 +13,15 @@ const Footer = () => {
                             <h3 className='text-sm text-black font-semibold leading- custom-3xl lg:pb-[37px] pb-6'>
                                 {section.title}
                             </h3>
-                            {section.links.map((link, i) => (
-                                <p key={i} className='text-sm font-normal leading-custom-3xl lg:pb-[22px] pb-4 cursor-pointer'>
-                                    {link}
-                                </p>
-                            ))}
+                            <ul>
+                                {section.links.map((link, i) => (
+                                    <li key={i} className='text-sm font-normal leading-custom-3xl lg:pb-[22px] pb-4 cursor-pointer'>
+                                        <a href="#">
+                                            {link}
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
                     ))}
                     <div>
