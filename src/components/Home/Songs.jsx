@@ -34,25 +34,25 @@ const Songs = () => {
                 <thead>
                   <tr className='pb-[33px]'>
                     <th></th>
-                    <th className='font-semibold sm:text-sm text-xs text-black text-left sm:w-6/12 w-5/12 pb-[33px]'>Song</th>
-                    <th className='font-semibold sm:text-sm text-xs text-black text-left pb-[33px] pr-6'>Release Date</th>
-                    <th className='font-semibold sm:text-sm text-xs text-black pb-[33px] text-right'>Times Played</th>
+                    <th className='font-semibold text-sm  text-black text-left sm:w-6/12 w-5/12 pb-[33px]'>Song</th>
+                    <th className='font-semibold text-sm  text-black text-left pb-[33px] pr-6'>Release Date</th>
+                    <th className='font-semibold text-sm  text-black pb-[33px] text-right'>Times Played</th>
                   </tr>
                 </thead>
                 <tbody>
                   {SONGS_LIST.map((song, index) => (
                     <tr key={index} className=''>
-                      <td className='text-off-black sm:text-sm text-xs lg:pb-[44px] pb-7 max-lg:pr-5 '>{String(index + 1).padStart(2, '0')}</td>
-                      <td className='font-semibold sm:text-sm text-xs text-black lg:pb-[44px] pb-7 max-lg:pr-5'>{song.title}</td>
-                      <td className='text-lightBlack font-normal sm:text-xs text-[10px] lg:pb-[44px] pb-7'>Nov 4, 2023</td>
-                      <td className='text-lightBlack font-normal sm:text-xs text-[10px] text-right lg:pb-[44px] pb-7'>{song.timesPlayed}</td>
+                      <td className='text-off-black text-sm lg:pb-[44px] pb-7 max-lg:pr-5 '>{String(index + 1).padStart(2, '0')}</td>
+                      <td className='font-semibold text-sm  text-black lg:pb-[44px] pb-7 max-lg:pr-5'>{song.title}</td>
+                      <td className='text-lightBlack font-normal text-xs lg:pb-[44px] pb-7'>Nov 4, 2023</td>
+                      <td className='text-lightBlack font-normal text-xs text-right lg:pb-[44px] pb-7 '>{song.timesPlayed}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
           </div>
-          <div className='relative lg:w-[300px] lg:h-[600px] md:w-[250px] md:h-[460px] w-full h-[300px]'>
+          <div className='relative lg:w-[300px] lg:h-[600px] md:w-[250px] md:h-[460px] w-full h-[400px]'>
             {imageUrl ? (
               <>
                 <img src={imageUrl} alt="Selected" className='w-full h-full object-cover rounded-[20px]' />
@@ -67,7 +67,7 @@ const Songs = () => {
                 )}
               </>
             ) : (
-              <div className='w-full h-full bg-blue text-sm font-normal text-center text-white whitespace-nowrap px-[105px] rounded-[20px] flex items-center justify-center cursor-pointer' onClick={handleAddPlaceClick}>
+              <div className='w-full h-full bg-blue text-sm font-normal max-sm:ml-16 text-center text-white whitespace-nowrap px-[105px] rounded-[20px] flex items-center justify-center cursor-pointer' onClick={handleAddPlaceClick}>
                 Add Place
               </div>
             )}
