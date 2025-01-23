@@ -27,23 +27,23 @@ const Songs = () => {
     <div className='lg:pt-14 pt-5'>
       <div className='container'>
         <h2 className='font-semibold lg:text-5xl md:text-4xl text-3xl text-black pb-[30px]'>Songs</h2>
-        <div className="md:flex justify-between items-center pb-[45px]">
-          <div className='lg:w-8/12 md:w-7/12 w-full !overflow-x-auto'>
-            <div className='overflow-x-auto whitespace-nowrap'>
+        <div className="flex justify-between items-center pb-[45px] overflow-x-auto gap-[60px]">
+          <div className='lg:w-8/12 md:w-7/12 w-full '>
+            <div className=' whitespace-nowrap'>
               <table className='w-full'>
                 <thead>
                   <tr className='pb-[33px]'>
                     <th></th>
                     <th className='font-semibold sm:text-sm text-xs text-black text-left sm:w-6/12 w-5/12 pb-[33px]'>Song</th>
-                    <th className='font-semibold sm:text-sm text-xs text-black text-left pb-[33px]'>Release Date</th>
+                    <th className='font-semibold sm:text-sm text-xs text-black text-left pb-[33px] pr-6'>Release Date</th>
                     <th className='font-semibold sm:text-sm text-xs text-black pb-[33px] text-right'>Times Played</th>
                   </tr>
                 </thead>
                 <tbody>
                   {SONGS_LIST.map((song, index) => (
                     <tr key={index} className=''>
-                      <td className='text-off-black sm:text-sm text-xs lg:pb-[44px] pb-7 '>{String(index + 1).padStart(2, '0')}</td>
-                      <td className='font-semibold sm:text-sm text-xs text-black lg:pb-[44px] pb-7'>{song.title}</td>
+                      <td className='text-off-black sm:text-sm text-xs lg:pb-[44px] pb-7 max-lg:pr-5 '>{String(index + 1).padStart(2, '0')}</td>
+                      <td className='font-semibold sm:text-sm text-xs text-black lg:pb-[44px] pb-7 max-lg:pr-5'>{song.title}</td>
                       <td className='text-lightBlack font-normal sm:text-xs text-[10px] lg:pb-[44px] pb-7'>Nov 4, 2023</td>
                       <td className='text-lightBlack font-normal sm:text-xs text-[10px] text-right lg:pb-[44px] pb-7'>{song.timesPlayed}</td>
                     </tr>
@@ -67,7 +67,7 @@ const Songs = () => {
                 )}
               </>
             ) : (
-              <div className='w-full h-full bg-blue text-sm font-normal text-center text-white rounded-[20px] flex items-center justify-center cursor-pointer' onClick={handleAddPlaceClick}>
+              <div className='w-full h-full bg-blue text-sm font-normal text-center text-white whitespace-nowrap px-[105px] rounded-[20px] flex items-center justify-center cursor-pointer' onClick={handleAddPlaceClick}>
                 Add Place
               </div>
             )}
