@@ -99,7 +99,7 @@ const Hero = () => {
                             <p
                                 onClick={() => handleChange(item)}
                                 key={index}
-                                className={`flex items-center cursor-pointer hover:bg-customBlack size-[30px] justify-center rounded-full transition-all duration-300 hover:text-white hover:font-medium text-black text-xs leading-custom-xl ${selectedLetter === item.toUpperCase() ? "bg-customBlack text-white" : ""}`} // Apply active styles
+                                className={`flex items-center cursor-pointer hover:bg-customBlack size-[30px] justify-center rounded-full transition-all duration-300 hover:text-white hover:font-medium text-black text-xs leading-custom-xl ${selectedLetter === item.toUpperCase() ? "bg-customBlack text-white" : ""}`}
                             >
                                 {item}
                             </p>
