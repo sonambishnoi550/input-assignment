@@ -6,8 +6,8 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
         <div className='lg:pt-[86px] pt-10 bg-off-white lg:pb-[30px] pb-6'>
-            <div className="container max-w-[1141px] mx-auto">
-                <div className="flex max-lg:flex-wrap justify-between lg:pb-[67px] pb-10 max-lg:gap-[60px] max-md:gap-[30px]">
+            <div className="container">
+                <div className="flex max-lg:flex-wrap justify-between lg:pb-[67px] pb-10 max-lg:gap-[32px]">
                     {FOOTER_DATA.map((section, index) => (
                         <div key={index}>
                             <h3 className='text-sm text-black font-semibold leading- custom-3xl lg:pb-[37px] pb-6'> {section.title}</h3>
@@ -33,7 +33,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='border-b w-full border-gray'></div>
-            <div className='flex md:justify-between max-w-[1141px] mx-auto lg:pt-[31px] md:pt-8 pt-6 px-4 max-sm:flex-col justify-center'>
+            <div className='flex md:justify-between container lg:pt-[31px] md:pt-8 pt-6 px-4 max-sm:flex-col justify-center'>
                 <p className='text-sm font-normal leading-custom-3xl max-sm:text-center'>
                     All rights reserved to Global Media Holdings Ltd. {currentYear} </p>
                 <div className='flex gap-[41px] max-sm:justify-center max-sm:pt-4'>

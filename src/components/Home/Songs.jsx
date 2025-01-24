@@ -26,7 +26,7 @@ const Songs = () => {
   return (
     <div className='bg-off-white'>
       <div className='container'>
-        <h2 className='font-semibold lg:text-5xl md:text-4xl text-3xl text-black'>Songs</h2>
+        <h2 className='font-semibold lg:text-5xl md:text-4xl text-3xl text-black max-lg:pb-6'>Songs</h2>
         <div className="flex justify-between items-center pb-[35px] overflow-x-auto gap-[60px]">
           <div className='lg:w-8/12 md:w-7/12 w-full'>
             <div className='whitespace-nowrap'>

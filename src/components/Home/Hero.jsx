@@ -90,7 +90,7 @@ const Hero = () => {
                     </h1>
                     <img src="./assets/images/webp/hero.webp" alt="hero"
                         className="size-[261px] max-lg:size-48 max-sm:mx-auto max-sm:mt-4 pointer-events-none" />
-                    <div className="absolute flex items-center gap-[26px] -bottom-16 max-lg:-bottom-10 max-sm:-bottom-6">
+                    <div className="absolute flex items-center max-sm:left-[36px] gap-[26px] -bottom-16 max-lg:-bottom-10 max-sm:-bottom-6">
                         <img src="./assets/images/webp/profile.webp" alt="profile"
                             className="size-[206px] max-lg:size-32 max-sm:size-20 pointer-events-none" />
                         <div>
