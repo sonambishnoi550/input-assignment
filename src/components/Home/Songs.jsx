@@ -27,9 +27,9 @@ const Songs = () => {
     <div className='bg-off-white'>
       <div className='container'>
         <h2 className='font-semibold lg:text-5xl md:text-4xl text-3xl text-black max-lg:pb-6'>Songs</h2>
-        <div className="flex justify-between items-center pb-[35px] overflow-x-auto gap-[60px]">
-          <div className='lg:w-8/12 md:w-7/12 w-full'>
-            <div className='whitespace-nowrap'>
+        <div className="md:flex justify-between items-center pb-[35px] gap-[60px]">
+          <div className='lg:w-8/12 md:w-7/12 w-full overflow-x-auto'>
+            <div className='whitespace-nowrap overflow-x-auto'>
               <table className='w-full'>
                 <thead>
                   <tr className='pb-[33px]'>
@@ -65,7 +65,7 @@ const Songs = () => {
                 )}
               </>
             ) : (
-              <div className='w-full h-full bg-blue text-sm font-normal max-sm:ml-16 text-center text-white whitespace-nowrap px-[105px] rounded-[20px] flex items-center justify-center cursor-pointer' onClick={handleAddPlaceClick}>
+              <div className='w-full h-full bg-blue text-sm font-normal max-sm:mt-3 text-center text-white whitespace-nowrap px-[105px] rounded-[20px] flex items-center justify-center cursor-pointer' onClick={handleAddPlaceClick}>
                 Add Place </div>
             )}
           </div>

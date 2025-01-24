@@ -7,13 +7,13 @@ const Footer = () => {
     return (
         <div className='lg:pt-[86px] pt-10 bg-off-white lg:pb-[30px] pb-6'>
             <div className="container">
-                <div className="flex max-lg:flex-wrap justify-between lg:pb-[67px] pb-10 max-lg:gap-[32px]">
+                <div className="flex max-lg:flex-wrap justify-between lg:pb-[67px] pb-10 max-lg:gap-[12px]">
                     {FOOTER_DATA.map((section, index) => (
                         <div key={index}>
                             <h3 className='text-sm text-black font-semibold leading- custom-3xl lg:pb-[37px] pb-6'> {section.title}</h3>
                             <ul>
                                 {section.links.map((link, i) => (
-                                    <li key={i} className='text-sm font-normal leading-custom-3xl lg:pb-[22px] pb-4 cursor-pointer hover:text-blue transition-all duration-500'>
+                                    <li key={i} className='md:text-sm text-custom-xs font-normal leading-custom-3xl lg:pb-[22px] md:pb-4 pb-2 cursor-pointer hover:text-blue transition-all duration-500'>
                                         <a href="#"> {link} </a>
                                     </li>
                                 ))}

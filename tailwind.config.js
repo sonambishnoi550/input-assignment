@@ -18,6 +18,9 @@ module.exports = {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"]
       },
+      fontSize: {
+        "custom-xs":"12px"
+      },
       lineHeight: {
         "custom-2xl": "121%",
          "custom-3xl": "171%"
